@@ -1,5 +1,6 @@
 import { JSX } from "react";
 import Header from "../common/landing-page/Header";
+import Footer from "../common/landing-page/Footer";
 
 interface AppLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -57,6 +58,7 @@ const LandingPageLayout = ({
           <>{children}</>
         )}
       </main>
+      <Footer />
     </>
   );
 };

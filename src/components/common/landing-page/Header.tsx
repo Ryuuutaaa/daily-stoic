@@ -50,10 +50,10 @@ const Header: React.FC<HeaderProps> = ({ isHasBackground }) => {
       <nav className="flex items-center justify-between max-w-6xl mx-auto px-4 py-2.5">
         <Link className="flex items-center" href="/">
           <Image
-            src="/logo.png"
+            src="/images/logostoi.png"
             alt="logo"
-            width={130}
-            height={130}
+            width={100}
+            height={100}
             className="object-contain"
             priority
             quality={90}
@@ -67,7 +67,7 @@ const Header: React.FC<HeaderProps> = ({ isHasBackground }) => {
               href={item.link}
               isActive={isHasBackground || showBackground}
               className={cn(
-                "text-base font-medium hover:text-red-600 transition-colors", 
+                "text-base font-medium hover:text-red-600 transition-colors"
               )}
             >
               {item.name}
