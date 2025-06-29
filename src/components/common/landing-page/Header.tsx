@@ -10,7 +10,7 @@ import React, { useEffect, useState } from "react";
 const headerMenu = [
   { name: "Beranda", link: "/" },
   { name: "about stoic", link: "/stoic" },
-  { name: "about psychology", link: "/psychology" },
+  { name: "about dark psychology", link: "/psychology" },
 ];
 
 interface HeaderProps {
