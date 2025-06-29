@@ -40,7 +40,6 @@ const PhilosopherCard = ({
         onHoverEnd={() => !inModal && setIsHovered(false)}
         onClick={handleClick}
       >
-        {/* Image Container */}
         <div className="relative w-full">
           {imageError ? (
             <div
@@ -75,7 +74,6 @@ const PhilosopherCard = ({
             </motion.div>
           )}
 
-          {/* Hover Effect */}
           {!inModal && (
             <div className="absolute inset-0 rounded-full bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
               <motion.svg
@@ -104,7 +102,6 @@ const PhilosopherCard = ({
           )}
         </div>
 
-        {/* Philosopher Info */}
         <div className="text-center mt-4 w-full">
           <motion.h3
             className={`${
@@ -133,7 +130,6 @@ const PhilosopherCard = ({
           </motion.p>
         </div>
 
-        {/* Modal Content */}
         {inModal && (
           <div className="w-full mt-6">
             <div className="border-t border-gray-200 pt-6">

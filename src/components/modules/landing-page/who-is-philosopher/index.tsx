@@ -12,7 +12,6 @@ const Philosopher = () => {
 
   return (
     <section className="max-w-7xl mx-auto flex flex-col justify-center mb-16 px-4 md:px-0 py-12">
-      {/* Header Section */}
       <div className="text-center mb-12">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
@@ -32,7 +31,6 @@ const Philosopher = () => {
         </motion.p>
       </div>
 
-      {/* Image Gallery */}
       <motion.div
         className="mb-16"
         initial={{ opacity: 0 }}
@@ -71,7 +69,6 @@ const Philosopher = () => {
         </div>
       </motion.div>
 
-      {/* Modal for selected philosopher */}
       <AnimatePresence>
         {selectedPhilosopher && (
           <motion.div
