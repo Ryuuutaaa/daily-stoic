@@ -12,6 +12,13 @@ export interface PsychologyProps {
   icon: string;
 }
 
+export interface DarkPsychologyProps {
+  title: string;
+  description: string;
+  icon: string;
+  tags: string[];
+}
+
 export const PHILOSOPHER: Philosopher[] = [
   {
     name: "Aristoteles",
@@ -136,5 +143,99 @@ export const PSYCHOLOGY_TOPICS: PsychologyProps[] = [
     title: "Shadow Work",
     description: "Exploring and integrating the hidden parts of the psyche",
     icon: "🌑",
+  },
+];
+
+export const DARK_PSYCHOLOGY: DarkPsychologyProps[] = [
+  {
+    title: "Machiavellianism",
+    description:
+      "The political philosophy justifying manipulation and deceit for maintaining power, derived from Niccolò Machiavelli's works.",
+    icon: "♟️",
+    tags: ["Manipulation", "Power", "Strategy"],
+  },
+  {
+    title: "Gaslighting",
+    description:
+      "A form of psychological manipulation that seeks to sow seeds of doubt in a person, making them question their own memory or perception.",
+    icon: "🕯️",
+    tags: ["Abuse", "Control", "Narcissism"],
+  },
+  {
+    title: "The Dark Triad",
+    description:
+      "Narcissism, Machiavellianism, and psychopathy - three personality traits associated with malevolence or negativity.",
+    icon: "☠️",
+    tags: ["Personality", "Psychology", "Behavior"],
+  },
+  {
+    title: "Psychological Warfare",
+    description:
+      "The use of propaganda, threats, and other psychological techniques to influence, intimidate, or demoralize opponents.",
+    icon: "🧠",
+    tags: ["Manipulation", "Military", "Politics"],
+  },
+  {
+    title: "Love Bombing",
+    description:
+      "An excessive display of affection and attention used to manipulate someone into a relationship or compliance.",
+    icon: "💣",
+    tags: ["Control", "Narcissism", "Abuse"],
+  },
+  {
+    title: "Triangulation",
+    description:
+      "A manipulation tactic where one person uses a third party to create jealousy, rivalry, or division.",
+    icon: "🔺",
+    tags: ["Jealousy", "Control", "Abuse"],
+  },
+  {
+    title: "Future Faking",
+    description:
+      "The act of making promises about the future to manipulate someone emotionally or gain trust.",
+    icon: "🔮",
+    tags: ["Deceit", "Trust", "Narcissism"],
+  },
+  {
+    title: "Neuro-Linguistic Programming (NLP)",
+    description:
+      "A controversial technique that aims to influence people through language patterns and psychological triggers.",
+    icon: "🗣️",
+    tags: ["Influence", "Language", "Behavior"],
+  },
+  {
+    title: "Social Engineering",
+    description:
+      "Manipulating people into giving up confidential information or taking action, often used in cybercrime.",
+    icon: "🎭",
+    tags: ["Cybersecurity", "Deception", "Trust"],
+  },
+  {
+    title: "Mirroring",
+    description:
+      "Copying someone's behavior or language to build rapport, which can be used manipulatively.",
+    icon: "🪞",
+    tags: ["Trust", "Deception", "Influence"],
+  },
+  {
+    title: "Emotional Blackmail",
+    description:
+      "Using a person's feelings against them to force them into compliance or guilt.",
+    icon: "🖤",
+    tags: ["Guilt", "Control", "Fear"],
+  },
+  {
+    title: "Hoovering",
+    description:
+      "A manipulative tactic used by narcissists to suck someone back into a toxic relationship after a break-up.",
+    icon: "🌀",
+    tags: ["Abuse", "Manipulation", "Narcissism"],
+  },
+  {
+    title: "Projection",
+    description:
+      "A defense mechanism where someone attributes their own negative traits or actions to another person.",
+    icon: "🔍",
+    tags: ["Defense", "Blame", "Psychoanalysis"],
   },
 ];
