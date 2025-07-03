@@ -6,6 +6,12 @@ export interface Philosopher {
   works: string[];
 }
 
+export interface PsychologyProps {
+  title: string;
+  description: string;
+  icon: string;
+}
+
 export const PHILOSOPHER: Philosopher[] = [
   {
     name: "Aristoteles",
@@ -45,5 +51,90 @@ export const PHILOSOPHER: Philosopher[] = [
     bio: "Filsuf Stoik yang mengajarkan bahwa kebebasan dan kebahagiaan dicapai dengan menerima apa yang tidak bisa dikendalikan.",
     lifespan: "50-135 M",
     works: ["Enchiridion", "Wacana", "Fragmen"],
+  },
+];
+
+export const PSYCHOLOGY_TOPICS: PsychologyProps[] = [
+  {
+    title: "Stoicism & CBT",
+    description:
+      "How ancient Stoic practices influenced modern Cognitive Behavioral Therapy",
+    icon: "🧠",
+  },
+  {
+    title: "Mindfulness",
+    description:
+      "The psychological benefits of mindfulness meditation practices",
+    icon: "🌿",
+  },
+  {
+    title: "Virtue Ethics",
+    description: "The impact of character development on mental wellbeing",
+    icon: "⭐",
+  },
+  {
+    title: "Attachment Theory",
+    description:
+      "How early relationships shape our emotional and social development",
+    icon: "🤝",
+  },
+  {
+    title: "Growth Mindset",
+    description:
+      "How believing in the ability to grow impacts motivation and resilience",
+    icon: "🚀",
+  },
+  {
+    title: "Neuroplasticity",
+    description: "The brain's ability to rewire and adapt through experiences",
+    icon: "🧬",
+  },
+  {
+    title: "Emotional Intelligence",
+    description:
+      "Understanding and managing your own emotions and those of others",
+    icon: "💡",
+  },
+  {
+    title: "Positive Psychology",
+    description:
+      "The scientific study of human flourishing and optimal functioning",
+    icon: "🌈",
+  },
+  {
+    title: "Flow State",
+    description: "Experiencing full immersion and focus in activities",
+    icon: "🌊",
+  },
+  {
+    title: "Resilience Psychology",
+    description: "How individuals overcome adversity and grow from challenges",
+    icon: "🛡️",
+  },
+  {
+    title: "Cognitive Biases",
+    description: "How mental shortcuts and distortions affect our thinking",
+    icon: "🎭",
+  },
+  {
+    title: "Behavioral Psychology",
+    description: "How behavior is learned and shaped by reinforcement",
+    icon: "🔁",
+  },
+  {
+    title: "Trauma & Healing",
+    description:
+      "Understanding the psychological effects of trauma and pathways to recovery",
+    icon: "💔",
+  },
+  {
+    title: "Maslow's Hierarchy",
+    description: "How human motivation is structured in a pyramid of needs",
+    icon: "🧗",
+  },
+  {
+    title: "Shadow Work",
+    description: "Exploring and integrating the hidden parts of the psyche",
+    icon: "🌑",
   },
 ];
