@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { DARK_PSYCHOLOGY } from "@/utils/constants";
+import DarkPsychologyCard from "@/components/ui/DarkPsychologyCard";
 
 const DarkPsychology = () => {
   return (
@@ -28,29 +29,14 @@ const DarkPsychology = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {DARK_PSYCHOLOGY.map((concept, index) => (
-            <motion.div
+            <DarkPsychologyCard
               key={concept.title}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gray-800 rounded-xl p-6 border-l-4 border-red-500 hover:border-purple-500 transition-all duration-300"
-            >
-              <h3 className="text-xl font-semibold mb-3 flex items-center">
-                <span className="text-red-400 mr-2">{concept.icon}</span>
-                {concept.title}
-              </h3>
-              <p className="text-gray-300 mb-4">{concept.description}</p>
-              <div className="flex flex-wrap gap-2">
-                {concept.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
+              delay={index + 0.1}
+              title={concept.title}
+              description={concept.description}
+              icon={concept.icon}
+              tags={concept.tags}
+            />
           ))}
         </div>
 
