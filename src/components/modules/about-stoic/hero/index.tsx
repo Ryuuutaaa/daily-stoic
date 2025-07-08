@@ -16,7 +16,7 @@ const HeroAboutStoic = (): JSX.Element => {
             An ancient philosophy for modern life, teaching resilience, virtue,
             and the art of living in accordance with nature.
           </p>
-          <button className="mt-4 px-6 py-3 bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-25 rounded-lg text-lg font-medium hover:bg-opacity-20 transition-all duration-300 self-start">
+          <button className="mt-4 px-6 py-3  bg-opacity-10 backdrop-blur-sm border border-white border-opacity-25 rounded-lg text-lg font-medium hover:bg-opacity-20 transition-all duration-300 self-start hover:bg-black hover:text-white hover:border-gray-300">
             Explore Teachings
           </button>
         </div>
