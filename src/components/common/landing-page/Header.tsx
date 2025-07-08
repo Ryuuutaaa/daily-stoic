@@ -9,7 +9,7 @@ import React, { useEffect, useState } from "react";
 
 const headerMenu = [
   { name: "Beranda", link: "/" },
-  { name: "about stoic", link: "/stoic" },
+  { name: "about stoic", link: "/about-stoic" },
   { name: "about psychology", link: "/psychology" },
 ];
 
