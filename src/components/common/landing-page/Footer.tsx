@@ -5,8 +5,7 @@ import {
   MessageCircle,
   Twitter,
   Mail,
-  Phone,
-  MapPin,
+  Github,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -93,17 +92,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <Mail className="h-5 w-5 text-gray-300 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">info@filsafatku.com</span>
+                <span className="text-gray-300">hiraritoryuta@gmail.com</span>
               </div>
               <div className="flex items-start space-x-3">
-                <Phone className="h-5 w-5 text-gray-300 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">+62 123 4567 890</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-gray-300 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">
-                  Jl. Filsafat No. 123, Jakarta
-                </span>
+                <Github className="h-5 w-5 text-gray-300 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-300">Ryuuutaaa</span>
               </div>
             </div>
           </div>
@@ -147,9 +140,7 @@ const Footer = () => {
       <div className="bg-gray-800 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-300 text-sm">
-              © {currentYear} FilsafatKu. All rights reserved.
-            </p>
+            <p className="text-gray-300 text-sm">© {currentYear} Ryutaaa.tsx</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link
                 href="/privacy"
